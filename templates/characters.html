@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block headline %}
+
+<h1> List of {{ c_name_template }} </h1>
+
+<ul>
+    {% for chars in chars_template %}
+    <li><a href="/Survey_Corps/{{ c_name_template }}/{{ loop.index0 }} ">{{ chars.name }}</a></li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block headline %}
+
+
+<h1>{{ c_profile_template.name }}</h1>
+<img src="{{ c_profile_template.url }}" alt="">
+<p>Age: {{ c_profile_template.age }} </p>
+<p>Height: {{ c_profile_template.height }} </p>
+<p>Weight: {{ c_profile_template.weight }} </p>
+<p>Status: {{ c_profile_template.weight }}</p>
+
+<h2>BIOGRAPHY</h2>
+
+<p>{{ c_profile_template.description }} </p>
+
+{% endblock %}
